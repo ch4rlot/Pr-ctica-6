@@ -1,0 +1,199 @@
+{
+	"name": "Hoja de eventos 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 252356922456464,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Muñequito",
+					"sid": 603712637947297,
+					"parameters": {
+						"animation": "\"Izquierda\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 858147409606038
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 475188996905281,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Muñequito",
+					"sid": 590108147434933,
+					"parameters": {
+						"animation": "\"Derecha\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 284493809519619
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-released",
+					"objectClass": "Teclado",
+					"sid": 881812413434884
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Muñequito",
+					"sid": 637642588081038,
+					"parameters": {
+						"animation": "\"Quieto\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 117591366361681
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 435133488158131
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "Muñequito",
+					"sid": 258682930498856,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Detector",
+					"sid": 314941063956597,
+					"parameters": {
+						"x": "Muñequito.X+8",
+						"y": "Muñequito.Y"
+					}
+				}
+			],
+			"sid": 101371749020511
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 997199962088433
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "Muñequito",
+					"sid": 585610164006041
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Detector",
+					"sid": 383505779048224,
+					"parameters": {
+						"x": "Muñequito.X-8",
+						"y": "Muñequito.Y"
+					}
+				}
+			],
+			"sid": 459280963782174
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Detector",
+					"sid": 788144466297709,
+					"parameters": {
+						"object": "Caja"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 343336772121562,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Caja",
+					"sid": 312111960908437,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 758727505824077
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Detector",
+					"sid": 922078993229867,
+					"parameters": {
+						"object": "Caja"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 767598917626226,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Caja",
+					"sid": 687243247261835,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 105171816811892
+		}
+	],
+	"sid": 280034982540515
+}

@@ -1,0 +1,77 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 587382649514449,
+					"parameters": {
+						"object": "comenzar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "comenzar",
+					"sid": 252190873956168,
+					"parameters": {
+						"size-pt": "23"
+					}
+				}
+			],
+			"sid": 372168280420419
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 591653391441907
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "comenzar",
+					"sid": 895026477765004,
+					"parameters": {
+						"size-pt": "22"
+					}
+				}
+			],
+			"sid": 130453982737803
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 850595370394121,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "comenzar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 277154949863643,
+					"parameters": {
+						"layout": "Juego principal"
+					}
+				}
+			],
+			"sid": 902407351923348
+		}
+	],
+	"sid": 404912249307526
+}
