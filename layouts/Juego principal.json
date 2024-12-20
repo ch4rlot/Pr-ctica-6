@@ -1,0 +1,243 @@
+{
+	"name": "Juego principal",
+	"layers": [
+		{
+			"name": "Capa 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Sprite2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 9,
+					"sid": 684236750575965,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 684236750575965,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 488,
+						"y": 306,
+						"width": 983,
+						"height": 619,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Muñequito",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Quieto",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 10,
+					"sid": 544436585961080,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Plataforma": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 544436585961080,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 52,
+						"y": 380.5,
+						"width": 70,
+						"height": 56,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite4",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11,
+					"sid": 139094767812630,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 139094767812630,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 465,
+						"y": 444,
+						"width": 931.0083137377885,
+						"height": 53,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.2503781176898885,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite4",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 12,
+					"sid": 540096739876126,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 540096739876126,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 461,
+						"y": 117,
+						"width": 931.0083137377885,
+						"height": 53,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.020212558470051434,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 409277544961567,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
+	"sid": 650282249623254,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 1708,
+	"height": 960,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "Hoja de eventos 2"
+}

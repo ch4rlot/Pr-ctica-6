@@ -1,0 +1,78 @@
+{
+	"name": "Hoja de eventos 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 252356922456464,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Muñequito",
+					"sid": 603712637947297,
+					"parameters": {
+						"animation": "\"Izquierda\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 858147409606038
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 475188996905281,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Muñequito",
+					"sid": 590108147434933,
+					"parameters": {
+						"animation": "\"Derecha\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 284493809519619
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-released",
+					"objectClass": "Teclado",
+					"sid": 881812413434884
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Muñequito",
+					"sid": 637642588081038,
+					"parameters": {
+						"animation": "\"Quieto\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 117591366361681
+		}
+	],
+	"sid": 280034982540515
+}
