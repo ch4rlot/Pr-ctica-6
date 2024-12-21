@@ -98,7 +98,10 @@
 			"TextoCpuCooler",
 			"TextoFuenteDeAlimentación",
 			"TextoTarjetaGráfoca",
-			"TextoRAM"
+			"TextoRAM",
+			"DetectorFuendeDeAlimentacion",
+			"Texto2",
+			"Texto3"
 		],
 		"subfolders": []
 	},
