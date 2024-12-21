@@ -14,6 +14,11 @@
 			"behaviorId": "DragnDrop",
 			"name": "ArrastrarYSoltar",
 			"sid": 698476361384189
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 440582770664321
 		}
 	],
 	"effectTypes": [],
