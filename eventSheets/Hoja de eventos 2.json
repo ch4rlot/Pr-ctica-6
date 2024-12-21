@@ -1,0 +1,326 @@
+{
+	"name": "Hoja de eventos 2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Aciertos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 887991113087290
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 252356922456464,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Muñequito",
+					"sid": 603712637947297,
+					"parameters": {
+						"animation": "\"Izquierda\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 858147409606038
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 475188996905281,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Muñequito",
+					"sid": 590108147434933,
+					"parameters": {
+						"animation": "\"Derecha\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 284493809519619
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-released",
+					"objectClass": "Teclado",
+					"sid": 881812413434884
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Muñequito",
+					"sid": 637642588081038,
+					"parameters": {
+						"animation": "\"Quieto\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 117591366361681
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 435133488158131
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "Muñequito",
+					"sid": 258682930498856,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Detector",
+					"sid": 314941063956597,
+					"parameters": {
+						"x": "Muñequito.X+8",
+						"y": "Muñequito.Y"
+					}
+				}
+			],
+			"sid": 101371749020511
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 997199962088433
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "Muñequito",
+					"sid": 585610164006041
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Detector",
+					"sid": 383505779048224,
+					"parameters": {
+						"x": "Muñequito.X-8",
+						"y": "Muñequito.Y"
+					}
+				}
+			],
+			"sid": 459280963782174
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Detector",
+					"sid": 788144466297709,
+					"parameters": {
+						"object": "Caja"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 343336772121562,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Caja",
+					"sid": 312111960908437,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 758727505824077
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Detector",
+					"sid": 922078993229867,
+					"parameters": {
+						"object": "Caja"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 767598917626226,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Caja",
+					"sid": 687243247261835,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 105171816811892
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "TextoPlacabase",
+					"sid": 425205405654844,
+					"parameters": {
+						"text": "\"Placa base\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 940676342245019
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "PlacaBase",
+					"sid": 699321164287322,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TextoPlacabase",
+					"sid": 983765778147237,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 754251803385164,
+					"parameters": {
+						"variable": "Aciertos",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 788705927613830,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Muñequito",
+							"sid": 684230642379471,
+							"parameters": {
+								"object": "PlacaBase"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 228931311892917,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 337665038344893
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "PlacaBase",
+									"sid": 295143436660375
+								}
+							],
+							"sid": 824439945142127
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "PlacaBase",
+					"sid": 579333911332061,
+					"parameters": {
+						"object": "DetectorOrdenador",
+						"offset-x": "0",
+						"offset-y": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "PlacaBase",
+					"sid": 370044700787369,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "CajaDelOrdenador",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 704223254439830
+		}
+	],
+	"sid": 280034982540515
+}
