@@ -35,6 +35,27 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Entrada de texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Arrastrar y soltar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pegado",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Plataforma",
@@ -63,7 +84,21 @@
 			"Sprite4",
 			"Sprite5",
 			"Caja",
-			"Detector"
+			"Detector",
+			"CajaDelOrdenador",
+			"PlacaBase",
+			"TextoPlacabase",
+			"DetectorOrdenador",
+			"FuenteDeAlimentación",
+			"Disipador",
+			"Cpu",
+			"TarjetaGráfica",
+			"TarjetaRAM",
+			"textoCPU",
+			"TextoCpuCooler",
+			"TextoFuenteDeAlimentación",
+			"TextoTarjetaGráfoca",
+			"TextoRAM"
 		],
 		"subfolders": []
 	},

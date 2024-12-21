@@ -1,0 +1,75 @@
+{
+	"name": "CajaDelOrdenador",
+	"plugin-id": "Sprite",
+	"sid": 635939893888394,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 578541138849692
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1600,
+						"height": 1600,
+						"originX": 0.319375,
+						"originY": 0.530625,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3623956,
+						"collisionPoly": {
+							"points": [
+								0.163125,
+								0.145,
+								0.839375,
+								0.151875,
+								0.8475,
+								0.81625,
+								0.785625,
+								0.854375,
+								0.73125,
+								0.855,
+								0.170625,
+								0.85,
+								0.1475,
+								0.78875
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Punto imagen 1",
+								"x": 0.326875,
+								"y": 0.504375
+							},
+							{
+								"name": "Punto imagen 2",
+								"x": 0.304375,
+								"y": 0.269375
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 140267455562201,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

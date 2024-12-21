@@ -2,6 +2,16 @@
 	"name": "Hoja de eventos 2",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Aciertos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 887991113087290
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -193,6 +203,123 @@
 				}
 			],
 			"sid": 105171816811892
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "TextoPlacabase",
+					"sid": 425205405654844,
+					"parameters": {
+						"text": "\"Placa base\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 940676342245019
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "PlacaBase",
+					"sid": 699321164287322,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "TextoPlacabase",
+					"sid": 983765778147237,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 754251803385164,
+					"parameters": {
+						"variable": "Aciertos",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 788705927613830,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Muñequito",
+							"sid": 684230642379471,
+							"parameters": {
+								"object": "PlacaBase"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 228931311892917,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 337665038344893
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "PlacaBase",
+									"sid": 295143436660375
+								}
+							],
+							"sid": 824439945142127
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "PlacaBase",
+					"sid": 579333911332061,
+					"parameters": {
+						"object": "DetectorOrdenador",
+						"offset-x": "0",
+						"offset-y": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "PlacaBase",
+					"sid": 370044700787369,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "CajaDelOrdenador",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 704223254439830
 		}
 	],
 	"sid": 280034982540515
