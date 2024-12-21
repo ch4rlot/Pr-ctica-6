@@ -1,0 +1,77 @@
+{
+	"name": "Hoja de eventos 3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 549885629416656,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Texto4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 115657735164209,
+					"parameters": {
+						"layout": "Juego principal"
+					}
+				}
+			],
+			"sid": 249753941117580
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 901900204350454,
+					"parameters": {
+						"object": "Texto4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "Texto4",
+					"sid": 975499304435679,
+					"parameters": {
+						"size-pt": "23"
+					}
+				}
+			],
+			"sid": 462235802791871
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 525512402142192
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "Texto4",
+					"sid": 407056398427040,
+					"parameters": {
+						"size-pt": "22"
+					}
+				}
+			],
+			"sid": 477077356628163
+		}
+	],
+	"sid": 221528806009518
+}

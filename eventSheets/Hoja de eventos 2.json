@@ -115,33 +115,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 997199962088433
-				},
-				{
-					"id": "is-mirrored",
-					"objectClass": "Muñequito",
-					"sid": 585610164006041
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Detector",
-					"sid": 383505779048224,
-					"parameters": {
-						"x": "Muñequito.X-8",
-						"y": "Muñequito.Y"
-					}
-				}
-			],
-			"sid": 459280963782174
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "Detector",
 					"sid": 788144466297709,
@@ -170,39 +143,6 @@
 				}
 			],
 			"sid": 758727505824077
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Detector",
-					"sid": 922078993229867,
-					"parameters": {
-						"object": "Caja"
-					}
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Teclado",
-					"sid": 767598917626226,
-					"parameters": {
-						"key": 37
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "simulate-control",
-					"objectClass": "Caja",
-					"sid": 687243247261835,
-					"behaviorType": "Plataforma",
-					"parameters": {
-						"control": "left"
-					}
-				}
-			],
-			"sid": 105171816811892
 		},
 		{
 			"eventType": "block",
@@ -696,6 +636,32 @@
 				}
 			],
 			"sid": 825568877494522
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 450507572940344,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Texto5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 606012699808001,
+					"parameters": {
+						"layout": "Menú final"
+					}
+				}
+			],
+			"sid": 355962086524600
 		}
 	],
 	"sid": 280034982540515

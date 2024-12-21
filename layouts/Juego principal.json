@@ -1772,6 +1772,62 @@
 					}
 				},
 				{
+					"type": "Texto5",
+					"properties": {
+						"text": "Salir",
+						"enable-bbcode": true,
+						"font": "Magneto",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 53,
+					"sid": 238008623013255,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 238008623013255,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 617.8580696821948,
+						"y": 439.9677373150369,
+						"width": 59.36025785997458,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Cpu",
 					"properties": {
 						"initially-visible": true,
@@ -2016,7 +2072,19 @@
 	},
 	"sid": 650282249623254,
 	"nonworld-instances": [],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "vignette",
+			"name": "Viñeta",
+			"instance": {
+				"isEnabled": true,
+				"parameters": {
+					"start-radius": 0.3,
+					"end-radius": 0.75
+				}
+			}
+		}
+	],
 	"width": 1708,
 	"height": 960,
 	"unboundedScrolling": false,
